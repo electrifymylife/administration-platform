@@ -1,0 +1,17 @@
+@mixin icon ($icon, $ratio, $color: #2D2D47, $left: 0, $right: unset) {
+  position: absolute;
+  content: '';
+  mask-image: $icon;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  background-color: $color;
+  width: $ratio;
+  height: $ratio;
+  top: calc(50% - $ratio / 2);
+  left: $left;
+  right: $right;
+
+  @if ($right != unset) {
+    left: unset;
+  }
+}

@@ -1,0 +1,23 @@
+.top-level-menu__first {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  & .btn-home {
+    width: 24px;
+    height: 24px;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.707 2.29289C12.3165 1.90237 11.6833 1.90237 11.2928 2.29289L1.99992 11.5858C1.6094 11.9763 1.6094 12.6095 1.99992 13C2.39045 13.3905 3.02361 13.3905 3.41414 13L3.99985 12.4143V21C3.99985 21.5523 4.44756 22 4.99985 22H18.9998C19.5521 22 19.9998 21.5523 19.9998 21V12.4141L20.5857 13C20.9762 13.3905 21.6094 13.3905 21.9999 13C22.3904 12.6095 22.3904 11.9763 21.9999 11.5858L12.707 2.29289ZM17.9998 10.4141L11.9999 4.41421L5.99985 10.4143V20H17.9998V10.4141Z" fill="%237000E3"/></svg>');
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  & .btn-module {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+
+    &.current {
+      pointer-events: none;
+    }
+  }
+}

@@ -1,0 +1,81 @@
+@use "../../abstract/mixins";
+@use "../icons";
+
+.modal-menu {
+  display: none;
+  position: absolute;
+  width: fit-content;
+  top: calc(100% + 4px);
+  right: 0;
+  background-color: #fff;
+  box-shadow: 0 4px 16px 0 rgba(41, 0, 84, 0.30), 0 0 2px 0 rgba(41, 0, 84, 0.20);
+  border-radius: 8px;
+  min-width: 240px;
+  overflow: hidden;
+  z-index: 999;
+
+  &.active {
+    display: block;
+  }
+
+  & li {
+    position: relative;
+    font-size: 14px;
+    padding: 8px 12px 8px calc(8px + 16px + 8px);
+    cursor: pointer;
+    &:hover,
+    &:focus {
+      background-color: #ECEAFA;
+    }
+
+    &.icon-user-login {
+      &:before {
+        @include mixins.icon($icon: icons.$icon-user, $ratio: icons.$sm, $left: 8px);
+      }
+    }
+    &.icon-logout {
+      &:before {
+        @include mixins.icon($icon: icons.$icon-logout, $ratio: icons.$sm, $left: 8px);
+      }
+    }
+    &.icon-list {
+      &:before {
+        @include mixins.icon($icon: icons.$icon-list, $ratio: icons.$sm, $left: 8px);
+      }
+    }
+    &.icon-edit {
+      &:before {
+        @include mixins.icon($icon: icons.$icon-edit, $ratio: icons.$sm, $left: 8px);
+      }
+    }
+    &.icon-trash-can {
+      color: #D90660;
+      &:before {
+        @include mixins.icon($icon: icons.$icon-trash-can, $ratio: icons.$sm, $left: 8px, $color: #D90660);
+      }
+    }
+    &.icon-unlink {
+      &:before {
+        @include mixins.icon($icon: icons.$icon-unlink, $ratio: icons.$sm, $left: 8px);
+      }
+    }
+    &.icon-scholar-hat {
+      &:before {
+        @include mixins.icon($icon: icons.$scholar-hat, $ratio: icons.$sm, $left: 8px);
+      }
+    }
+    &.icon-clones {
+      &:before {
+        @include mixins.icon($icon: icons.$icon-clones, $ratio: icons.$sm, $left: 8px);
+      }
+    }
+
+    &.disabled {
+      pointer-events: none;
+      color: #A8A8BD;
+      &:before {
+        background-color: #A8A8BD;
+      }
+    }
+  }
+}

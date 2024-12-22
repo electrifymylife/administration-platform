@@ -1,0 +1,224 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: url('https://fs.advance.ru/fonts/OpenSans/OpenSans-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('https://fs.advance.ru/fonts/OpenSans/OpenSans-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('https://fs.advance.ru/fonts/OpenSans/OpenSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('https://fs.advance.ru/fonts/OpenSans/OpenSans-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('https://fs.advance.ru/fonts/OpenSans/OpenSans-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('https://fs.advance.ru/fonts/OpenSans/OpenSans-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('https://fs.advance.ru/fonts/OpenSans/OpenSans-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('https://fs.advance.ru/fonts/OpenSans/OpenSans-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('https://fs.advance.ru/fonts/OpenSans/OpenSans-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('https://fs.advance.ru/fonts/OpenSans/OpenSans-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('https://fs.advance.ru/fonts/OpenSans/OpenSans-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('https://fs.advance.ru/fonts/OpenSans/OpenSans-ExtraBoldItalic.ttf') format('truetype');
+  font-weight: 800;
+  font-style: italic;
+  font-display: fallback;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  color: #2D2D47;
+  overflow-x: hidden;
+}
+
+a {
+  font-weight: inherit;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  &:hover {
+    color: inherit;
+  }
+}
+
+button {
+  border-style: none;
+  background: unset;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  text-transform: inherit;
+  color: inherit;
+  padding: 0;
+}
+
+select {
+  border: unset;
+  background: unset;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  text-transform: inherit;
+  color: inherit;
+  outline: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+// inputs webkit reset
+
+select::-ms-expand {
+  display: none;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked + label:after,
+input[type="radio"]:checked + label:after{
+  opacity: 1;
+}
+
+input[type="checkbox"]:checked + label:after,
+input[type="radio"]:checked + label:after{
+  opacity: 1;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+  opacity: 1;
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-width: thin;
+  cursor: pointer;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.287 13.712C7.479 13.904 7.71667 14 8 14C8.28267 14.0007 8.52 13.905 8.712 13.713C8.904 13.521 9 13.2833 9 13C9.00067 12.7173 8.905 12.48 8.713 12.288C8.521 12.096 8.28334 12 8 12C7.71734 11.9993 7.48 12.095 7.288 12.287C7.096 12.479 7 12.7167 7 13C6.99934 13.2827 7.095 13.52 7.287 13.712ZM11.287 13.712C11.479 13.904 11.7167 14 12 14C12.2827 14.0007 12.52 13.905 12.712 13.713C12.904 13.521 13 13.2833 13 13C13.0007 12.7173 12.905 12.48 12.713 12.288C12.521 12.096 12.2833 12 12 12C11.7173 11.9993 11.48 12.095 11.288 12.287C11.096 12.479 11 12.7167 11 13C10.9993 13.2827 11.095 13.52 11.287 13.712ZM15.287 13.712C15.479 13.904 15.7167 14 16 14C16.2827 14.0007 16.52 13.905 16.712 13.713C16.904 13.521 17 13.2833 17 13C17.0007 12.7173 16.905 12.48 16.713 12.288C16.521 12.096 16.2833 12 16 12C15.7173 11.9993 15.48 12.095 15.288 12.287C15.096 12.479 15 12.7167 15 13C14.9993 13.2827 15.095 13.52 15.287 13.712ZM3.587 21.412C3.979 21.804 4.45 22 5 22H19C19.5493 22.0007 20.02 21.805 20.412 21.413C20.804 21.021 21 20.55 21 20V6C21.0007 5.45067 20.805 4.98 20.413 4.588C20.021 4.196 19.55 4 19 4H18V3C18 2.44772 17.5523 2 17 2C16.4477 2 16 2.44772 16 3V4H8V3C8 2.44772 7.55229 2 7 2C6.44772 2 6 2.44772 6 3V4H5C4.45067 3.99933 3.98 4.195 3.588 4.587C3.196 4.979 3 5.45 3 6V20C2.99934 20.5493 3.195 21.02 3.587 21.412ZM19 20H5V10H19V20ZM19 8H5V6H19V8ZM8 18C8.55229 18 9 17.5523 9 17C9 16.4477 8.55229 16 8 16C7.44772 16 7 16.4477 7 17C7 17.5523 7.44772 18 8 18ZM12 18C12.5523 18 13 17.5523 13 17C13 16.4477 12.5523 16 12 16C11.4477 16 11 16.4477 11 17C11 17.5523 11.4477 18 12 18ZM17 17C17 17.5523 16.5523 18 16 18C15.4477 18 15 17.5523 15 17C15 16.4477 15.4477 16 16 16C16.5523 16 17 16.4477 17 17Z" fill="%232D2D47"/></svg>') no-repeat;
+}
+
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.287 13.712C7.479 13.904 7.71667 14 8 14C8.28267 14.0007 8.52 13.905 8.712 13.713C8.904 13.521 9 13.2833 9 13C9.00067 12.7173 8.905 12.48 8.713 12.288C8.521 12.096 8.28334 12 8 12C7.71734 11.9993 7.48 12.095 7.288 12.287C7.096 12.479 7 12.7167 7 13C6.99934 13.2827 7.095 13.52 7.287 13.712ZM11.287 13.712C11.479 13.904 11.7167 14 12 14C12.2827 14.0007 12.52 13.905 12.712 13.713C12.904 13.521 13 13.2833 13 13C13.0007 12.7173 12.905 12.48 12.713 12.288C12.521 12.096 12.2833 12 12 12C11.7173 11.9993 11.48 12.095 11.288 12.287C11.096 12.479 11 12.7167 11 13C10.9993 13.2827 11.095 13.52 11.287 13.712ZM15.287 13.712C15.479 13.904 15.7167 14 16 14C16.2827 14.0007 16.52 13.905 16.712 13.713C16.904 13.521 17 13.2833 17 13C17.0007 12.7173 16.905 12.48 16.713 12.288C16.521 12.096 16.2833 12 16 12C15.7173 11.9993 15.48 12.095 15.288 12.287C15.096 12.479 15 12.7167 15 13C14.9993 13.2827 15.095 13.52 15.287 13.712ZM3.587 21.412C3.979 21.804 4.45 22 5 22H19C19.5493 22.0007 20.02 21.805 20.412 21.413C20.804 21.021 21 20.55 21 20V6C21.0007 5.45067 20.805 4.98 20.413 4.588C20.021 4.196 19.55 4 19 4H18V3C18 2.44772 17.5523 2 17 2C16.4477 2 16 2.44772 16 3V4H8V3C8 2.44772 7.55229 2 7 2C6.44772 2 6 2.44772 6 3V4H5C4.45067 3.99933 3.98 4.195 3.588 4.587C3.196 4.979 3 5.45 3 6V20C2.99934 20.5493 3.195 21.02 3.587 21.412ZM19 20H5V10H19V20ZM19 8H5V6H19V8ZM8 18C8.55229 18 9 17.5523 9 17C9 16.4477 8.55229 16 8 16C7.44772 16 7 16.4477 7 17C7 17.5523 7.44772 18 8 18ZM12 18C12.5523 18 13 17.5523 13 17C13 16.4477 12.5523 16 12 16C11.4477 16 11 16.4477 11 17C11 17.5523 11.4477 18 12 18ZM17 17C17 17.5523 16.5523 18 16 18C15.4477 18 15 17.5523 15 17C15 16.4477 15.4477 16 16 16C16.5523 16 17 16.4477 17 17Z" fill="%232D2D47"/></svg>') no-repeat;
+}
+
+// form elements common styles
+
+.input-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 4px;
+  min-height: 40px;
+  width: 100%;
+  padding: 10px 8px 10px 12px;
+  background-color: #F8F8FC;
+  border: 1px solid #EDEDF7;
+  position: relative;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border: 1px solid #7000E3;
+    outline: 1px solid #7000E3;
+  }
+}
