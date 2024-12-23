@@ -6,7 +6,7 @@
 
 В текущей реализации проект содержит пять страниц: главная страница (разводящее меню) и четыре страницы модуля Учебной части. Страницы модуля представляют собой таблицы с выводом данных, контекстными меню для каждой строки таблицы, возможностью попасть во внутренние таблицы (подраздел Хэштеги), пагинатором.
 
-Стек проекта: <strong><code>Vue</code></strong>, <strong><code>SCSS</code></strong>, <strong><code>REST Api</code></strong>, <strong><code>Vite</code></strong>.
+Стек проекта: <strong><code>Vue</code></strong>, <strong><code>Vuex</code></strong>, <strong><code>SCSS</code></strong>, <strong><code>REST Api</code></strong>, <strong><code>Vite</code></strong>.
 
 **Реализовано:** 
 - обращение к БД Firebase для вывода данных таблиц;
